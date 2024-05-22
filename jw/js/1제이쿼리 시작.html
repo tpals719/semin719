@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 연습</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <style>
+        .click{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="click"></div>
+    <div class="box"></div>
+
+    <ul class="menu">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+        <li>menu7</li>
+    </ul>
+    <script>
+        /*제이쿼리는 선택자를 잡고 시작
+        let click=document,queryselect
+
+        $('.click')
+        $():제이쿼리 함수를 사용해서 선택자를선택한 다음
+        각정 케이쿼리 매서드를 사용해
+        여러가지 기능을 지정해준다
+
+        제이쿼리란? 자바스크립트를 이용해 
+        브라우저 내부를 쉽게 제어할 수 있는 라이브러리*/
+
+        $(document).ready(function(){
+           $('.click').on("click",function(){
+            //$(대상).on(이벤트,function(){실행될 구문}):
+            $('.click').css("backgroundColor","red")
+            //클릭이라는 클래스에 백그라운드 색을 레드
+         })//click
+
+
+         $(".box").on("click",function(){
+           $(".box").css("backgroundColor","yellow")
+
+         })//box
+         /*menu 안에 있는 li들을 글자 색을 변경하시오*/
+
+         $(".menu li").css("color","red")
+
+        })//document
+        //box라는 클래스를 만들어서 백그라운드 색 변경
+
+  
+
+
+
+
+        
+    </script>
+</body>
+</html>
