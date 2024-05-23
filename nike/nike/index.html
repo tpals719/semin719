@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike</title>
+    <link rel="stylesheet" href="./css/style1.css">
+  
+   <script src="./js/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+        <header>
+            <div class="hwrap">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./img/Nike - PEGATINAS.jpg">
+                    </a>
+                </div><!--logo-->
+                <div class="allbutton">
+                
+                    <a href="#"><span></span></a> 
+                    <a href="#"><span></span></a>
+                    <a href="#"><span></span></a>
+                </div><!--allbutton-->
+                <ul class="gnb">
+                    <a href="#"><li>Man</li></a>
+                    <a href="#"><li>Woman</li></a>
+                    <a href="#"><li>Kids</li></a>
+                    <a href="#"><li>Login</li></a>
+                </ul>
+
+            </div><!--hwrap-->
+        </header><!--header-->
+        
+        <div class="wrap">
+      
+            <div class="main">
+                <div class="text">
+                <p class="product">                  
+                      PRODUCT : NIKE JORDAN<br>
+                      PRICE : $70.99<br>
+                      COLOR : RED             
+                </p>
+                <div class="viewbox">
+                <div class="view red" >
+                    <a href="./sub1/index.html" >view more</a></div>
+                   <div class="view white">
+                    <a href="./sub2/index.html">view more</a></div> 
+                </div>
+                </div><!--text-->
+                <div class="cimg">                  
+                        <img src="./img/red.png" class="img1"> 
+                        <img src="./img/white.png" class="img2">                  
+                </div><!--cimg-->          
+
+             
+                    
+                
+            </div><!--main-->
+      
+
+        <div class="content">
+          
+ 
+            <div class="redshoes" class="on">
+                <img src="./img/red.png" >
+                <p class="b_notice">
+                    PRODUCT : NIKE  JORDAN<br>
+                    PRICE : $70.99<br>
+                    COLOR :RED  
+                </p>
+            </div>
+            <div class="blueshoes">
+                <p class="g_notice">
+                    PRODUCT : NIKE  JORDAN<br>
+                    PRICE : $70.99<br>
+                    COLOR :WHITE
+                </p>
+                <img src="./img/white.png">
+                
+            </div>
+        </div><!--content-->
+   
+    </div><!--wrap-->
+    <script>
+        $(".content>div").on("click",function(){
+            $(this).addClass("on").siblings().removeClass("on")
+    
+            let i=$(this).index(0)
+            console.log(i)
+         $(".cimg").children("img").eq(i).show()
+        .siblings().hide()
+        $("view red").children("a").hide()
+      
+
+
+        $(".viewbox").children(".view").eq(i).show()
+        .siblings().hide()
+        
+        })
+
+
+      
+    
+        
+
+
+
+       
+    </script>
+</body>
+</html>
