@@ -14,7 +14,7 @@ ul{
 /*****mobile****/
 #wrap{
     width: 100%;
-    height: auto;
+    height:auto;
 background-image: url(../img/bgc.jpg);
     position: relative;
     background-repeat: no-repeat;
@@ -23,8 +23,9 @@ background-image: url(../img/bgc.jpg);
 }
 .main{
     width: 100%;
-    height: 300px;
+    height: 100vh;
     border-bottom: 1px solid#000;
+    position: relative;
     
 }
 .util{
@@ -46,7 +47,11 @@ background-image: url(../img/bgc.jpg);
     display: flex;
     align-items: center;
   justify-content: center;
-   
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
 
  
 }
@@ -218,6 +223,7 @@ height: 100%;
 .pf_contents{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .nike{
     width: 100%;
@@ -240,16 +246,32 @@ height: 100%;
   
 }
 
+
 .po img{
     object-fit: cover;
 }
-
+.po:hover{
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.5);
+}
 .potxt{
     text-align: center;
     font-size: 1rem;
    
    font-weight: bold;
     
+}
+.pf_2{object-fit: cover;
+overflow: hidden;}
+.pf_2 a{
+    width: 100%;
+    height: 100%;
+    
+}
+.pf_2 img{
+    width: 100%;
+    height: 100%;
+  
 }
 /***********/
 .jw{
