@@ -20,13 +20,11 @@ background-image: url(../img/bgc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity:80%;
-    overflow: hidden;
 }
 .main{
     width: 100%;
-    height: 100vh;
+    height: 300px;
     border-bottom: 1px solid#000;
-    position: relative;
     
 }
 .util{
@@ -44,23 +42,19 @@ background-image: url(../img/bgc.jpg);
 }
 .profile{
     width: 100%;
- 
+    height: 300px;
     display: flex;
-    flex-direction: row;
     align-items: center;
   justify-content: center;
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%,-50%);
    
 
  
 }
 .name{
-    font-size: 2.9rem;
+    font-size: 3rem;
     font-family: serif;
     font-weight: bold;
+ 
     background-image: url(../img/eclipse.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -232,7 +226,7 @@ height: 100%;
 .niketit{
     width: 100px;
     height: 20px;
-    margin: 0 auto;
+   margin: 0 auto;
 
 }
 .po {
@@ -240,24 +234,16 @@ height: 100%;
     height: 18vh;
     border-radius: 15px;
     overflow: hidden;
-    
+
     margin: 20px auto;
     
   
 }
 
 .po img{
-    width: 100%;
-    height: auto;
-
     object-fit: cover;
 }
-.po:hover {
-    box-shadow: 10px 10px 5px #aaaeeb;
-    opacity: 0.01; 
-   
 
-}
 .potxt{
     text-align: center;
     font-size: 1rem;
